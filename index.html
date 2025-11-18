@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Animada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-300 text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-gray-600/70 backdrop-blur-md z-50 shadow">
+        <nav class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+            <img class="w-128 h-24" src="img/logo.png">
+            <button class="px-4 py-2 bg-green-600 rounded-lg font-semibold hover:bg-green-600 transition">
+                Ache uma loja
+            </button>
+        </nav>
+    </header>
+
+  <!-- HERO -->
+    <section id="hero" class="min-h-screen flex items-center justify-center text-center px-4">
+        <div class="animate__animated animate__fadeIn">
+            <h2 class="text-5xl text-green-600 font-extrabold mb-4">Sub<span class="text-yellow-500">way</span></h2>
+            <p class="text-xl text-green-600 max-w-lg mx-auto">
+                Passando vontade? Veja já o nosso <strong>cardápio!</strong>
+            </p>
+
+            <button class="mt-8 px-6 py-3 bg-green-600 rounded-xl text-lg font-bold hover:scale-105 transition transform">
+                <span>Clique</span><span class="text-yellow-500"> aqui!</span>
+            </button>
+            </div>
+    </section>
+
+  <!-- SOBRE -->
+	<section class="py-16 bg-green-700 mt-10 opacity-0 scroll-anim">
+		<div class="max-w-4xl mx-auto px-4 text-center">
+			<h3 class="text-4xl font-bold mb-4">Nosso <span class="text-yellow-500">cardápio</span></h3>
+			<p class="text-lg">
+				Se delicie com nossas deliciosas opções de sanduíches personalizáveis <strong>ao seu gosto!</strong>
+			</p>
+		</div>
+	</section>
+
+  <!-- CARDS -->
+    <section class="py-20 opacity-0 scroll-anim">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+
+          	<!-- CARD 1 -->
+            <div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/frango-defumado-com-cream-cheese_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+             	<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Frango defumado com cream chesse</h4>
+            	<p class="text-xl place-content-end"><strong>R$</strong>24,99</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/frango-teriyaki_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Frango teriyaki</h4>
+              	<p class="text-xl place-content-end place-content-end"><strong>R$</strong>23,99</p>
+            </div>
+			
+			<!-- CARD 3 -->
+			<div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/frango-empanado_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Frango Empanado</h4>
+				<p class="text-xl place-content-end"><strong>R$</strong>19,99</p>
+			</div>
+
+            <!-- CARD 3 -->
+            <div class="d-flex bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/frango_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Frango</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>20,99</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+              	<img src="img/cardapio/carne-steak-churrasco_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Steak churrasco</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>25,99</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/carne-supreme_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Carne supreme</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>26,99</p>
+            </div>
+            
+			<div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/carne-seca-com-cream-cheese_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Carne seca com cream chesse</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>25,99</p>
+            </div>
+            
+			<div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/presunto_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Presunto</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>18,99</p>
+            </div>
+            
+			<div class="grid bg-green-700 p-6 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-500/90 transition transform cursor-pointer">
+				<img src="img/cardapio/vegetariano_500x300.jpg" class="mx-auto border border-3 border-yellow-500 rounded-2xl">
+				<h4 class="sm:text-center md:text-start text-3xl font-bold mb-3 mt-3">Vegetariano</h4>
+              	<p class="text-xl place-content-end"><strong>R$</strong>15,99</p>
+            </div>
+
+        </div>
+    </section>
+
+	<!-- FOOTER -->
+	<footer class="bg-green-600 py-8 text-center">
+		© 2025 – Metrô dos Sanduíches. Todos os direitos reservados.
+	</footer>
+
+  	<script src="script.js"></script>
+</body>
+</html>
