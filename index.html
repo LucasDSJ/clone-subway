@@ -14,7 +14,7 @@
     <header class="fixed top-0 left-0 w-full bg-gray-600/70 backdrop-blur-md z-50 shadow">
         <nav class="max-w-6xl mx-auto p-4 flex justify-between items-center">
             <img class="w-128 h-24" src="img/logo.png">
-            <button class="px-4 py-2 bg-green-600 rounded-lg font-semibold hover:bg-green-600 transition">
+            <button id="btn-lojas" class="px-4 py-2 bg-green-600 rounded-lg font-semibold hover:bg-green-600 transition scroll-smooth">
                 Ache uma loja
             </button>
         </nav>
@@ -28,7 +28,7 @@
                 Passando vontade? Veja já o nosso <strong>cardápio!</strong>
             </p>
 
-            <button class="mt-8 px-6 py-3 bg-green-600 rounded-xl text-lg font-bold hover:scale-105 transition transform">
+            <button id="btn-cardapio" class="mt-8 px-6 py-3 bg-green-600 rounded-xl text-lg font-bold hover:scale-105 transition transform">
                 <span>Clique</span><span class="text-yellow-500"> aqui!</span>
             </button>
             </div>
@@ -103,6 +103,61 @@
 
         </div>
     </section>
+	<!-- TÍTULO DA SESSÃO -->
+	<h1 id="lojas" 
+		class="text-green-600 text-4xl font-bold text-center mb-6 scroll-anim opacity-0">
+		Ache uma loja
+	</h1>
+
+	<!-- CARROSSEL - INÍCIO -->
+	<section id="carousel-section" class="w-full relative mt-12 mb-12 scroll-anim opacity-0">
+		<div class="max-w-6xl mx-auto overflow-hidden rounded-2xl relative">
+			<!-- TRILHA DO CARROSSEL -->
+			<div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+				<!-- SLIDE 1 -->
+				<div class="min-w-full relative">
+					<img src="img/loja/loja_4.jpg" class="w-full h-[260px] sm:h-[360px] md:h-[480px] lg:h-[650px] object-cover object-center">
+					<div class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 bg-black/70 p-4 sm:p-6 rounded-xl">
+						<h3 class="text-lg sm:text-2xl md:text-3xl font-bold text-green-600">Loja 1 — São Paulo</h3>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">Brás — Rua dos Limões, 1023</p>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">CEP 01234-000</p>
+					</div>
+				</div>
+
+				<!-- SLIDE 2 -->
+				<div class="min-w-full relative">
+					<img src="img/loja/loja_5.jpg" class="w-full h-[260px] sm:h-[360px] md:h-[480px] lg:h-[650px] object-cover object-center">
+					<div class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 bg-black/70 p-4 sm:p-6 rounded-xl">
+						<h3 class="text-lg sm:text-2xl md:text-3xl font-bold text-green-600">Loja 2 — Santo André</h3>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">Bairro do Cozinheiro — Rua das Dores, 14</p>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">CEP 01234-567</p>
+					</div>
+				</div>
+
+				<!-- SLIDE 3 -->
+				<div class="min-w-full relative">
+					<img src="img/loja/loja_6.jpg" class="w-full h-[260px] sm:h-[360px] md:h-[480px] lg:h-[650px] object-cover object-center">
+					<div class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 bg-black/70 p-4 sm:p-6 rounded-xl">
+						<h3 class="text-lg sm:text-2xl md:text-3xl font-bold text-green-600">Loja 3 — Guarulhos</h3>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">Bairro dos Aviões — Rua Centenária, 136</p>
+						<p class="text-xs sm:text-sm md:text-base text-white max-w-md">CEP 01234-789</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- BOTÕES DE CONTROLE -->
+			<button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-green-600/60 hover:bg-green-600/80 text-white p-3 rounded-full z-20" aria-label="Slide anterior">
+				‹
+			</button>
+
+			<button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-green-600/60 hover:bg-green-600/80 text-white p-3 rounded-full z-20" aria-label="Próximo slide">
+				›
+			</button>
+
+			<!-- INDICADORES -->
+			<div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20"></div>
+		</div>
+	</section>
 
 	<!-- FOOTER -->
 	<footer class="bg-green-600 py-8 text-center">
@@ -110,5 +165,6 @@
 	</footer>
 
   	<script src="script.js"></script>
+  	<script src="carrossel.js"></script>
 </body>
 </html>
